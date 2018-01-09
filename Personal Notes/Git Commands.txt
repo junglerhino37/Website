@@ -1,0 +1,5 @@
+git add .
+git branch login #"login" is a placeholder
+git checkout login
+git commit -m 'Another change'
+.gitignore file
