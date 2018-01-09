@@ -1,0 +1,1 @@
+This website is an exercise to learn HTML and Github

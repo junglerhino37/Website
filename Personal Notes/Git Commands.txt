@@ -3,3 +3,5 @@ git branch login #"login" is a placeholder
 git checkout login
 git commit -m 'Another change'
 .gitignore file
+touch Samplefile.txt
+git remote add origin https://github.com/junglerhino37/Website.git
