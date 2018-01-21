@@ -43,6 +43,7 @@ ul {
   margin-bottom: 20px;
 }
 
+
 /*-----------------------------------Header----------------------------------*/
 
 header {
@@ -68,15 +69,22 @@ header li {
 
 header #branding {
   float: left;
+  display: inline;
 }
 
 header #branding h1 {
   margin: 0;
+  display: inline-block;
+}
+
+header #cr_logo {
+  padding-right: 50px;
 }
 
 header nav {
   float: right;
   margin-top: 10px;
+  padding-top: 115px;
 }
 
 header .highlight, header .current a {
@@ -223,5 +231,4 @@ footer {
   #newsletter form input[type="email"], .quote input, , quote textarea {
     width=100%;
     margin-bottom=5px;
-
   }
