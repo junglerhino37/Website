@@ -13,6 +13,7 @@ body {
   overflow: hidden;
 }
 
+
 ul {
   padding: 0;
   margin: 0;
@@ -42,22 +43,8 @@ ul {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-/*--------------------------------SVG Stuff----------------------------------*/
 
-.defs3581 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 10s linear alternate infinite;
-}
 
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
 /*-----------------------------------Header----------------------------------*/
 
 header {
@@ -81,7 +68,7 @@ header li {
   padding: 0 20px 0 20px;
 }
 
-header #branding { 
+header #branding {
   float: left;
   display: inline;
 }
@@ -91,8 +78,8 @@ header #branding h1 {
   display: inline-block;
 }
 
-header #cr_logo {
-  padding-right: 0px;
+header #branding #logo_c{
+  animation: ufo-big-lights 2.5s ease infinite;
 }
 
 header nav {
@@ -132,7 +119,6 @@ header a:hover {
 #showcase p {
   font-size: 20px;
 }
-
 
 /*--------------------------------Newsletter---------------------------------*/
 
@@ -232,24 +218,21 @@ footer {
     float: none;
     text-align: center;
     width: 100%;
-
   }
   header {
     padding-bottom: 20px;
     text-align: center;
   }
-header nav {
-  display: block;
- padding-top: 15px;
- }
-
- header #cr_logo{
-   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
- }
-
+  header nav {
+    display: block;
+    padding-top: 15px;
+  }
+  header #cr_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
   #showcase h1 {
     margin-top: 40px;
   }
@@ -260,5 +243,35 @@ header nav {
   #newsletter form input[type="email"], .quote input, , quote textarea {
     width=100%;
     margin-bottom=5px;
+  }
+}
+/*--------------------------------Animations----------------------------------*/
+
+.logo_file {
+  stroke: #cc8ac1;
+  stroke-width: 5px;
+  fill: lighten(#cc8ac1, 20%);
+display: inline;
+stroke-dasharray: 1000;
+stroke-dashoffset: 1000;
+animation: dash 5s linear forwards;
+}
+
+.svg-container {
+display: inline;
+stroke-dasharray: 1000;
+stroke-dashoffset: 1000;
+animation: dash 5s linear forwards;
+}
+
+
+@keyframes fade {
+    0%   {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 00;
   }
 }
