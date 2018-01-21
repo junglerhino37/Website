@@ -78,10 +78,6 @@ header #branding h1 {
   display: inline-block;
 }
 
-header #branding #logo_c{
-  animation: ufo-big-lights 2.5s ease infinite;
-}
-
 header nav {
   float: right;
   margin-top: 10px;
@@ -245,17 +241,7 @@ footer {
     margin-bottom=5px;
   }
 }
-/*--------------------------------Animations----------------------------------*/
-
-.logo_file {
-  stroke: #cc8ac1;
-  stroke-width: 5px;
-  fill: lighten(#cc8ac1, 20%);
-display: inline;
-stroke-dasharray: 1000;
-stroke-dashoffset: 1000;
-animation: dash 5s linear forwards;
-}
+/*--------------------------------Animations---------------------------------- Can't be dynamic with github, need PHP or copy paste the svg inline*/ 
 
 .svg-container {
 display: inline;
@@ -272,6 +258,6 @@ animation: dash 5s linear forwards;
 }
 @keyframes dash {
   to {
-    stroke-dashoffset: 00;
+    stroke-dashoffset: 0;
   }
 }
