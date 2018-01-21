@@ -114,6 +114,7 @@ header a:hover {
 
 #showcase p {
   font-size: 20px;
+  animation: slide 5s ;
 }
 
 /*--------------------------------Newsletter---------------------------------*/
@@ -241,7 +242,7 @@ footer {
     margin-bottom=5px;
   }
 }
-/*--------------------------------Animations---------------------------------- Can't be dynamic with github, need PHP or copy paste the svg inline*/ 
+/*--------------------------------Animations---------------------------------- Can't be dynamic with github, need PHP or copy paste the svg inline*/
 
 .svg-container {
 display: inline;
@@ -260,4 +261,8 @@ animation: dash 5s linear forwards;
   to {
     stroke-dashoffset: 0;
   }
+}
+@keyframes slide {
+    0% {margin-left: 100%;padding: 300%}
+      100% {margin-left: 00%;padding: 00%}
 }
