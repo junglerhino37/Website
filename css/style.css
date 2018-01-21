@@ -81,7 +81,7 @@ header li {
   padding: 0 20px 0 20px;
 }
 
-header #branding {
+header #branding { 
   float: left;
   display: inline;
 }
@@ -92,7 +92,7 @@ header #branding h1 {
 }
 
 header #cr_logo {
-  padding-right: 50px;
+  padding-right: 0px;
 }
 
 header nav {
