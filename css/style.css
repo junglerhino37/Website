@@ -28,11 +28,19 @@ ul {
 }
 
 .dark {
-  padding: 15px;
+  padding: 5px;
   background: #35424a;
   color: white;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.dark-quote {
+  padding: 5px 5px 25px 5px;
+  background: #35424a;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /*-----------------------------------Header----------------------------------*/
@@ -149,6 +157,11 @@ header a:hover {
 article#main-col {
   float: left;
   width: 65%;
+  padding: 50px;
+}
+
+#main-col span.quote-author {
+  float: right;
 }
 
 /*----------------------------------SideBar----------------------------------*/
@@ -210,4 +223,5 @@ footer {
   #newsletter form input[type="email"], .quote input, , quote textarea {
     width=100%;
     margin-bottom=5px;
+
   }
