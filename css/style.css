@@ -212,7 +212,7 @@ footer {
 
 /*-----------------------------------Media Query---------------------------------*/
 
-@media (max-width: 900px) {
+@media (max-width: 875px) {
   header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col, aside#sidebar {
     float: none;
     text-align: center;
