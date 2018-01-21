@@ -15,11 +15,19 @@ Christopher Rouxel, Rouxel, Solidworks">
   <link rel="stylesheet" href="./css/style.css"> </head>
 
 <body>
-  <header>
+    <header>
     <div class="container">
-      <div id="branding"> <object id="cr_logo" data="./img/cr_logo.svg" type="image/svg+xml" width="100" height=auto> <span
-style="font-weight:bold;border:solid;color:grey;"> Sorry, but your browser does
-not support SVG. </span></object>
+        <div class="container_top">
+      <div id="branding">
+
+        <div class="svg-container">
+        <svg id="logo_cr" width=100  logo_cr="" version="1.1" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg">
+         <g fill="none" font-family="'Segoe Script'" letter-spacing="0px" stroke="#e8491d" word-spacing="0px">
+          <text id="logo_c" class="logo_c" transform="scale(1.1035 .90622)" x="8.838275" y="314.03723" font-size="133.58px" stroke-width="4" style="line-height:1.25" xml:space="preserve"><tspan x="8.838275" y="314.03723" fill="none" font-family="'Segoe Script'" stroke="#e8491d" stroke-width="4">C</tspan></text>
+          <text id="logo_r" class="logo_r" x="94.104774" y="242.17175" font-size="127.52px" stroke-width="4" style="line-height:1.25" xml:space="preserve"><tspan x="94.104774" y="242.17175" fill="none" font-family="'Segoe Script'" stroke="#e8491d" stroke-width="4">R</tspan></text>
+         </g>
+        </svg>
+      </div>
         <h1>
           <span class="highlight">Rouxel</span>Portfolio
         </h1>
@@ -32,12 +40,18 @@ not support SVG. </span></object>
         </ul>
       </nav>
     </div>
+    </div>
   </header>
 
   <section id="showcase">
     <div class="container">
       <h1>About Me</h1>
-      <p>The point of this website is to showcase my ability to learn new skills quickly and independently. Test Test </p>
+      <p>The point of this website is to showcase my ability to learn new skills quickly and independently.
+       </p>
+       <p><?php echo file_get_contents("cr_logo0.svg"); ?></p>
+
+
+       Hello, today is <?php echo date('l, F jS, Y'); ?>.
     </div>
   </section>
 

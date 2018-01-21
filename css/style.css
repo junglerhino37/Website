@@ -241,7 +241,11 @@ footer {
     margin-bottom=5px;
   }
 }
+<<<<<<< HEAD
 /*--------------------------------Animations---------------------------------- Can't be dynamic with github, need PHP or copy paste the svg inline*/
+=======
+/*--------------------------------Animations---------------------------------- Can't be dynamic with github, need PHP or copy paste the svg inline*/ 
+>>>>>>> origin/php_for_svg
 
 .svg-container {
 display: inline;
