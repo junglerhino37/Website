@@ -13,7 +13,6 @@ body {
   overflow: hidden;
 }
 
-
 ul {
   padding: 0;
   margin: 0;
@@ -44,13 +43,15 @@ ul {
   margin-bottom: 20px;
 }
 
-
+.hidden{
+  opacity=0;
+}
 /*-----------------------------------Header----------------------------------*/
 
 header {
   background: #35424a;
   color: white;
-  padding-top: 30px;
+  padding-top: 0px;
   min-height: 70px;
   border-bottom: #e8491d 3px solid;
 }
@@ -93,7 +94,15 @@ header a:hover {
   color: #cccccc;
   font-weight: bold;
 }
+/*---------------------------------Music---------------------------------*/
 
+
+.lesson_plans{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
 /*----------------------------------Showcase----------------------------------*/
 
 #showcase {
@@ -114,7 +123,7 @@ header a:hover {
 
 #showcase p {
   font-size: 20px;
-  animation: slide 5s ;
+  animation: slide 5s (start);
 }
 
 /*--------------------------------Newsletter---------------------------------*/
@@ -144,7 +153,12 @@ header a:hover {
 
 #boxes {
   margin-top: 90px;
+  transition: all 1s;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
 }
+
+
 
 #boxes .box {
   float: left;
@@ -242,27 +256,50 @@ footer {
     margin-bottom=5px;
   }
 }
+
 /*--------------------------------Animations---------------------------------- Can't be dynamic with github, need PHP or copy paste the svg inline*/
 
 .svg-container {
-display: inline;
-stroke-dasharray: 1000;
-stroke-dashoffset: 1000;
-animation: dash 5s linear forwards;
+  display: inline;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
 }
-
 
 @keyframes fade {
-    0%   {opacity:0;}
-    50% {opacity:1;}
-    100% {opacity:0;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
+
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
 }
+
 @keyframes slide {
-    0% {margin-left: 100%;padding: 300%}
-      100% {margin-left: 00%;padding: 00%}
+  0% {
+    margin-left: 100%;
+    padding: 300%
+  }
+  100% {
+    margin-left: 00%;
+    padding: 00%
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
