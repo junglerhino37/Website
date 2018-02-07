@@ -23,6 +23,9 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li class="current"><a href="Services.html">Services</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="javascript_playground.html">Javascript_playground</a></li>
+          <li><a href="cad.html">CAD Portfolio</a></li>
         </ul>
       </nav>
     </div>
@@ -48,6 +51,15 @@
             <h3>Website Design</h3>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
             <p>Pricing: $1,000-$3,000</p>
+
+            <button type="button" onclick="myFunction()">Click Me!</button>
+
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+
+
+
+
           </li>
           <li>
             <h3>Website Maintenance</h3>
@@ -89,6 +101,26 @@
   <footer>
     <p> Website Designed by Christopher Rouxel, Copyright &copy; 2018</p>
   </footer>
+
+
+
+  <script>
+    var x, y, z; // Statement 1
+    x = 5; // Statement 2
+    y = 6; // Statement 3
+    z = x + y; // Statement 4
+    function myFunction() {
+      document.getElementById("demo1").innerHTML =
+        "The value of z is " + z + ".";
+      document.getElementById("demo2").innerHTML =
+        "The value of y is " + y + ".";
+    }
+  </script>
+
+
+
+
+
 </body>
 
 </html>
