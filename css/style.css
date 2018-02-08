@@ -84,7 +84,7 @@ header nav {
   float: right;
   margin-top: 10px;
   padding-top: 115px;
-  animation: 4s ease-out 0s 1 slideInFromLeft;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 header .highlight, header .current a {
