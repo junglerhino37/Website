@@ -24,7 +24,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="Services.html">Services</a></li>
           <li><a href="music.html">Music</a></li>
-          <li  class="current"><a href="javascript_playground.html">Javascript_playground</a></li>
+          <li class="current"><a href="javascript_playground.html">Javascript_playground</a></li>
           <li><a href="cad.html">CAD Portfolio</a></li>
         </ul>
       </nav>
@@ -39,76 +39,100 @@
       <article id="main-col">
         <ul id="services">
           <li>
-            <h3>Website Design</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            <p>Pricing: $1,000-$3,000</p>
+            <h3>Playing with Functions</h3>
+            <p>Learning from w3schools.com to learn javascript to learn php to make a wordpress and make my svg logo be in it's own file. Guess it really is all about the journey. On the other hand, not all hard things are worth doing. Time will tell...
+            </p>
 
             <button type="button" onclick="myFunction()">Click Me!</button>
 
             <p id="demo1"></p>
             <p id="demo2"></p>
-
-
-
-
-          </li>
-          <li>
-            <h3>Website Maintenance</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            <p>Pricing: $250/mo</p>
-          </li>
-          <li>
-            <h3>Website Hosting</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            <p>Pricing: $25/mo</p>
-          </li>
-        </ul>
-      </article>
-
-      <aside id="sidebar">
-        <div class="dark">
-          <h3>Get a Quote</h3>
-          <form class="quote">
-            <div>
-              <label>Name</label><br>
-              <input type="text" placeholder="Name">
-            </div>
-            <div>
-              <label>Email</label><br>
-              <input type="text" placeholder="Email">
-            </div>
-            <div>
-              <label>Message</label><br>
-              <textarea placeholder="Message"></textarea>
-            </div>
-            <buttton class="button_1" type="Submit">Send</buttton>
-
-          </form>
-        </div>
-      </aside>
-    </div>
   </section>
+
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <ul id="services">
+          <li>
+            <h3>Events</h3>
+            <p>Date and Time</p>
+
+            <button type="button" <button onclick="document.getElementById('dateButton').innerHTML = Date()">The time is?</button>
+            <p id="dateButton"></p>
+  </section>
+
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <ul id="services">
+          <li>
+            <h2>Whose JSON?</h2> Display a random gypsy jazz guitarist with some JSON.
+            <br>
+            <button type="button" <button onclick=randGuitarist();> <p>Click me</p> </button>
+            <p id="demoJSON"></p>
+
+            <script>
+              var text = '{"employees":[' +
+                '{"firstName":"Tchavolo","lastName":"Schmidt" },' +
+                '{"firstName":"Duved","lastName":"Dunayevsky" },' +
+                '{"firstName":"Fapy","lastName":"Lafertin" }]}';
+
+              var x;
+
+
+              obj = JSON.parse(text);
+
+
+              function randGuitarist() {
+                x = Math.floor(Math.random() * 3);
+
+                document.getElementById("demoJSON").innerHTML =
+                  obj.employees[x].firstName + " " + obj.employees[x].lastName;
+              };
+            </script>
+  </section>
+
+  <script>
+    var x, y, z, person, fruits, text, fLen, i; // Statement 1
+    x = 5; // Statement 2
+    y = 6; // Statement 3
+    z = x + y; // Statement 4
+
+    person = {
+      name: "Chris",
+      age: 29,
+      favMusician: "Django Reinhardt"
+    }
+
+
+    function myFunction() {
+      document.getElementById("demo1").innerHTML =
+        "The value of z is " + z + ".";
+
+
+      document.getElementById("demo2").innerHTML =
+        person.name + "' favorite musicians is " +
+        person.favMusician;
+    }
+
+
+    <!-------------------------------------------------------------->
+
+
+    fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fLen = fruits.length;
+    text = "<ul>";
+    for (i = 0; i < fLen; i++) {
+      text += "<li>" + fruits[i] + "</li>";
+    }
+    text += "</ul>";
+    document.getElementById("demoLoop").innerHTML = text;
+  </script>
+
 
   <footer>
     <p> Website Designed by Christopher Rouxel, Copyright &copy; 2018</p>
   </footer>
-
-
-
-  <script>
-    var x, y, z; // Statement 1
-    x = 5; // Statement 2
-    y = 6; // Statement 3
-    z = x + y; // Statement 4
-    function myFunction() {
-      document.getElementById("demo1").innerHTML =
-        "The value of z is " + z + ".";
-      document.getElementById("demo2").innerHTML =
-        "The value of y is " + y + ".";
-    }
-  </script>
-
-
 
 
 
