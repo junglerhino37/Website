@@ -43,9 +43,10 @@ ul {
   margin-bottom: 20px;
 }
 
-.hidden{
+.hidden {
   opacity=0;
 }
+
 /*-----------------------------------Header----------------------------------*/
 
 header {
@@ -83,6 +84,7 @@ header nav {
   float: right;
   margin-top: 10px;
   padding-top: 115px;
+  animation: 4s ease-out 0s 1 slideInFromLeft;
 }
 
 header .highlight, header .current a {
@@ -94,36 +96,51 @@ header a:hover {
   color: #cccccc;
   font-weight: bold;
 }
+
 /*---------------------------------Music---------------------------------*/
 
-
-.lesson_plans{
+.lesson_plans {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
 }
+
 /*----------------------------------Showcase----------------------------------*/
 
 #showcase {
+  position: relative;
   min-height: 400px;
-  background: url('../img/snail_render.jpg');
+  background: url('../img/cad/mixer.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
-  color: white;
+}
+
+#showcaseText {
+  position: absolute;
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+  width: 50%;
+  min-width: 515px;
+  height: 50%;
+   bottom: 0%;
+  right: 0;
+  color: black;
 }
 
 #showcase h1 {
-  margin-top: 100px;
+    /* position: relative;
+    bottom:0; */
   font-size: 55px;
-  margin-bottom: 10px;
+  margin-top: 0;
 }
 
-#showcase p {
-  font-size: 20px;
+#showcase h3 {
+  margin-top:-5%;
+  font-size: 2vw;
   animation: slide 5s (start);
+  /*text-align: right;*/
 }
 
 /*--------------------------------Newsletter---------------------------------*/
@@ -154,11 +171,8 @@ header a:hover {
 #boxes {
   margin-top: 90px;
   transition: all 1s;
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-
+  animation: 5s ease-out 0s 1 slideInFromLeft;
 }
-
-
 
 #boxes .box {
   float: left;
@@ -245,8 +259,14 @@ footer {
     width: 40%;
   }
   #showcase h1 {
-    margin-top: 40px;
+    margin-top: 0;
   }
+
+  #showcase h3 {
+    margin-top: -10%;
+    font-size: 30px
+  }
+
   #newsletter button, .quote button {
     display: block;
     width: 100%;
