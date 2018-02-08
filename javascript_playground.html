@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Christopher Rouxel's Design Portfolio and other miscellanea">
+  <meta name="keyworks" content="Design, CAD, Solidworks, Christopher Rouxel, Rouxel, Solidworks">
+  <meta name="author" content="Christopher Rouxel">
+  <title>Rouxel Portfolio | Javascript Playground</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Rouxel</span> Portfolio</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li  class="current"><a href="javascript_playground.html">Javascript_playground</a></li>
+          <li><a href="cad.html">CAD Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <ul id="services">
+          <li>
+            <h3>Website Design</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <p>Pricing: $1,000-$3,000</p>
+
+            <button type="button" onclick="myFunction()">Click Me!</button>
+
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+
+
+
+
+          </li>
+          <li>
+            <h3>Website Maintenance</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <p>Pricing: $250/mo</p>
+          </li>
+          <li>
+            <h3>Website Hosting</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <p>Pricing: $25/mo</p>
+          </li>
+        </ul>
+      </article>
+
+      <aside id="sidebar">
+        <div class="dark">
+          <h3>Get a Quote</h3>
+          <form class="quote">
+            <div>
+              <label>Name</label><br>
+              <input type="text" placeholder="Name">
+            </div>
+            <div>
+              <label>Email</label><br>
+              <input type="text" placeholder="Email">
+            </div>
+            <div>
+              <label>Message</label><br>
+              <textarea placeholder="Message"></textarea>
+            </div>
+            <buttton class="button_1" type="Submit">Send</buttton>
+
+          </form>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <p> Website Designed by Christopher Rouxel, Copyright &copy; 2018</p>
+  </footer>
+
+
+
+  <script>
+    var x, y, z; // Statement 1
+    x = 5; // Statement 2
+    y = 6; // Statement 3
+    z = x + y; // Statement 4
+    function myFunction() {
+      document.getElementById("demo1").innerHTML =
+        "The value of z is " + z + ".";
+      document.getElementById("demo2").innerHTML =
+        "The value of y is " + y + ".";
+    }
+  </script>
+
+
+
+
+
+</body>
+
+</html>
