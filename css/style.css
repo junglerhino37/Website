@@ -138,9 +138,8 @@ header a:hover {
 
 #showcase h3 {
   margin-top:-5%;
-  font-size: 2vw;
-  animation: slide 5s (start);
-  /*text-align: right;*/
+font-size:calc(12px + 1vw);  animation: slide 5s (start);
+
 }
 
 /*--------------------------------Newsletter---------------------------------*/
@@ -258,13 +257,21 @@ footer {
     margin-right: auto;
     width: 40%;
   }
+
+  #showcaseText {
+    height: 30%;
+     bottom: 5%;
+    right: 0;
+    color: black;
+  }
+
+
   #showcase h1 {
     margin-top: 0;
   }
 
   #showcase h3 {
     margin-top: -10%;
-    font-size: 30px
   }
 
   #newsletter button, .quote button {
